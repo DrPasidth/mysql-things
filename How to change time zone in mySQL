@@ -1,0 +1,19 @@
+Option 1: Edit the MySQL configration file (my.cnf)
+  - using putty communicate with your server
+  - find where is my.cnf using find command
+  
+  #sudo find / -name my.cnf
+  Mostly my.cnf is in /etc/mysql
+  - use text editor insert default time zone i.e. for Bangkok +07:00
+  
+  #sudo nano /etc/mysql/my.cnf
+  
+  Scroll down to the bottom and add :
+  [mysqld]
+  default-time-zone = "+07:00"
+  Then restart MySQL
+  
+  #sudo service mysql restart
+  
+  Done.
+  
